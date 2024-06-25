@@ -27,7 +27,7 @@
 		"express": "^4.19.2",
 		"http-status": "^1.7.4",
 		"mongoose": "^8.4.3",
-		"pnpm": "^9.4.0",
 		"winston": "^3.13.0"
-	}
+	},
+	"packageManager": "pnpm@9.4.0"
 }
