@@ -8,7 +8,13 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(
+	cors({
+		origin: '*', // Adjust this to specify allowed origins or use '*' for all origins
+		methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed HTTP methods
+		allowedHeaders: ['Content-Type', 'Authorization'], // Adjust according to your needs
+	})
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
