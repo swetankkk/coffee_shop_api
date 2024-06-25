@@ -49,12 +49,14 @@ export const createCoffeeShop = async (
 	req: Request,
 	res: Response
 ): Promise<void> => {
-	const { name, location, rating, images } = req.body;
+	const { name, location, rating, imageurl, reviews, distance } = req.body;
 	const coffeeShop = new CoffeeShop({
 		name,
 		location,
 		rating,
-		images,
+		imageurl,
+		reviews,
+		distance,
 	});
 
 	try {
