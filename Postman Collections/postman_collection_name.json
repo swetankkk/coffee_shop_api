@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "57804c58-dff3-44c0-b6dd-20a68247045f",
+		"name": "coffee app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Coffee SHOP",
+			"id": "d7597764-3c92-42c0-951f-8c16e50db67e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/api/coffee-shops/{{shop_id}}"
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL COFFEE Shops",
+			"id": "ebcc595b-a979-48ca-add0-e79a2e4d5beb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/api/coffee-shops/"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT CREATESHOP",
+			"id": "a322d1ed-81bf-43cd-a45b-d4568eb9c9c4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"shop name\",\n    \"location\": \"shop location\",\n    \"imageurl\": \"image_url\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/api/coffee-shops/"
+			},
+			"response": []
+		},
+		{
+			"name": "Updated Shop",
+			"id": "bfeafdd9-470b-4428-8f44-906465b7fe68",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"updated name\",\n    \"location\": \"updated location\",\n    \"imageurl\": \"image_url\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/api/coffee-shops/6679e41e4cbe659782cccf6d"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE SHOP",
+			"id": "01315261-771d-499a-a54d-777b550ecc96",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:5000/api/coffee-shops/6679e41e4cbe659782cccf6d"
+			},
+			"response": []
+		}
+	]
+}
